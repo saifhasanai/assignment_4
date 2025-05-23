@@ -8,7 +8,7 @@ export default function Display() {
   const [editedData, setEditedData] = useState<any>({});
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/data')
+    fetch('https://assignment-4-ivvw.onrender.com/api/data')
       .then(res => res.json())
       .then(setData);
   }, []);
